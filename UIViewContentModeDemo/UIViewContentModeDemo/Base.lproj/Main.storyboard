@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bT9-5l-aNo">
+                                <rect key="frame" x="10" y="120" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.71372549019999998" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="kwY-gB-d0E"/>
+                                    <constraint firstAttribute="height" constant="140" id="lmp-cc-lRt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LdB-Ue-fW2">
+                                <rect key="frame" x="170" y="120" width="140" height="140"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="SXT-5r-0MW"/>
+                                    <constraint firstAttribute="width" constant="140" id="c2V-Am-c7J"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-xe-ROO">
+                                <rect key="frame" x="20" y="380" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vd6-X2-8wI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="UIViewContentModeScaleAspectFit"/>
+                                <connections>
+                                    <action selector="scaleAspectFit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIu-OC-DU6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBh-3U-5hz">
+                                <rect key="frame" x="20" y="430" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Waq-ck-fB7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="UIViewContentModeScaleAspectFill"/>
+                                <connections>
+                                    <action selector="scaleAspectFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMr-x3-xyG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6K-Pe-PON">
+                                <rect key="frame" x="20" y="330" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TfE-YD-viy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="UIViewContentModeScaleToFill"/>
+                                <connections>
+                                    <action selector="scaleToFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBB-kE-hDZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bT9-5l-aNo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="2Pt-rZ-gg1"/>
+                            <constraint firstItem="P6K-Pe-PON" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="2pt-Gb-MD6"/>
+                            <constraint firstItem="LdB-Ue-fW2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="4s7-aA-xVY"/>
+                            <constraint firstAttribute="trailing" secondItem="Gof-xe-ROO" secondAttribute="trailing" constant="20" id="8mD-Lq-to2"/>
+                            <constraint firstAttribute="trailing" secondItem="P6K-Pe-PON" secondAttribute="trailing" constant="20" id="9TM-mE-CSd"/>
+                            <constraint firstItem="qBh-3U-5hz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LcQ-1b-MFH"/>
+                            <constraint firstAttribute="trailing" secondItem="qBh-3U-5hz" secondAttribute="trailing" constant="20" id="M1e-c1-uNK"/>
+                            <constraint firstItem="Gof-xe-ROO" firstAttribute="top" secondItem="P6K-Pe-PON" secondAttribute="bottom" constant="20" id="ThS-Qu-O8p"/>
+                            <constraint firstAttribute="trailing" secondItem="LdB-Ue-fW2" secondAttribute="trailing" constant="10" id="f9m-VJ-zlf"/>
+                            <constraint firstItem="Gof-xe-ROO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="pyo-vo-BxS"/>
+                            <constraint firstItem="qBh-3U-5hz" firstAttribute="top" secondItem="Gof-xe-ROO" secondAttribute="bottom" constant="20" id="raG-bN-MWs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qBh-3U-5hz" secondAttribute="bottom" constant="20" id="z8h-AP-1sQ"/>
+                            <constraint firstItem="bT9-5l-aNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="zQI-Ij-dUh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="leftImageView" destination="bT9-5l-aNo" id="H3e-Sc-fVr"/>
+                        <outlet property="rightImageView" destination="LdB-Ue-fW2" id="ZxE-nf-Znm"/>
+                        <outlet property="scaleAspectFillButton" destination="qBh-3U-5hz" id="9xF-p9-4qe"/>
+                        <outlet property="scaleAspectFitButton" destination="Gof-xe-ROO" id="bMY-PZ-1mg"/>
+                        <outlet property="scaleToFillButton" destination="P6K-Pe-PON" id="x6z-ka-e2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="321"/>
+        </scene>
+    </scenes>
+</document>
