@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82P-hJ-u6y">
+                                <rect key="frame" x="0.0" y="353" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OtC-eW-hQR"/>
+                                </constraints>
+                                <state key="normal" title="A present B"/>
+                                <connections>
+                                    <segue destination="sDP-yV-gH9" kind="presentation" id="tCb-6M-L79"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="82P-hJ-u6y" secondAttribute="trailing" id="1Mc-oD-A25"/>
+                            <constraint firstItem="82P-hJ-u6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YbZ-Tt-fcF"/>
+                            <constraint firstItem="82P-hJ-u6y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cwI-ya-Ch6"/>
+                            <constraint firstItem="82P-hJ-u6y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m34-Aa-FAl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="339"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="lMA-Zc-HfT">
+            <objects>
+                <viewController id="sDP-yV-gH9" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdF-eG-qfh"/>
+                        <viewControllerLayoutGuide type="bottom" id="AjP-SX-oub"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u4L-hm-dqB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U29-zx-rZT">
+                                <rect key="frame" x="0.0" y="260" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JRa-OQ-H4r"/>
+                                </constraints>
+                                <state key="normal" title="B present C"/>
+                                <connections>
+                                    <segue destination="k5v-yS-M7Q" kind="presentation" id="7ak-4O-sCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-NN-JX9">
+                                <rect key="frame" x="0.0" y="410" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ceM-y5-Sq3"/>
+                                </constraints>
+                                <state key="normal" title="B dismiss A"/>
+                                <connections>
+                                    <action selector="bDismissC:" destination="sDP-yV-gH9" eventType="touchUpInside" id="rbq-LR-qTv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U29-zx-rZT" firstAttribute="leading" secondItem="u4L-hm-dqB" secondAttribute="leading" id="1rY-HM-co9"/>
+                            <constraint firstItem="U29-zx-rZT" firstAttribute="top" secondItem="cdF-eG-qfh" secondAttribute="bottom" constant="240" id="5vK-5t-Qkb"/>
+                            <constraint firstAttribute="trailing" secondItem="U29-zx-rZT" secondAttribute="trailing" id="5yM-yd-Lqx"/>
+                            <constraint firstItem="ekX-NN-JX9" firstAttribute="leading" secondItem="u4L-hm-dqB" secondAttribute="leading" id="eIQ-eF-Bae"/>
+                            <constraint firstAttribute="trailing" secondItem="ekX-NN-JX9" secondAttribute="trailing" id="kRB-FB-sFO"/>
+                            <constraint firstItem="ekX-NN-JX9" firstAttribute="top" secondItem="U29-zx-rZT" secondAttribute="bottom" constant="120" id="sGv-rY-UTg"/>
+                            <constraint firstItem="U29-zx-rZT" firstAttribute="centerX" secondItem="u4L-hm-dqB" secondAttribute="centerX" id="ug8-Zp-NBd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ug8-Zp-NBd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39s-KN-Yi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="339"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="S4L-b3-mOi">
+            <objects>
+                <viewController id="k5v-yS-M7Q" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKy-gu-n5s"/>
+                        <viewControllerLayoutGuide type="bottom" id="ohK-JP-1q4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ofr-eV-kus">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-1i-kbn">
+                                <rect key="frame" x="0.0" y="260" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uVA-iF-qsw"/>
+                                </constraints>
+                                <state key="normal" title="C dismiss B"/>
+                                <connections>
+                                    <action selector="cDismissB:" destination="k5v-yS-M7Q" eventType="touchUpInside" id="Q7Z-9L-2mA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-N5-23s">
+                                <rect key="frame" x="0.0" y="410" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CU7-cb-Oo9"/>
+                                </constraints>
+                                <state key="normal" title="C dismiss A"/>
+                                <connections>
+                                    <action selector="cDismissA:" destination="k5v-yS-M7Q" eventType="touchUpInside" id="WIc-Hp-Pd1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549020648002625" green="0.32549020648002625" blue="0.32549020648002625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V1g-N5-23s" secondAttribute="trailing" id="4Uz-Qf-GC4"/>
+                            <constraint firstItem="V1g-N5-23s" firstAttribute="leading" secondItem="ofr-eV-kus" secondAttribute="leading" id="5G3-I1-9a6"/>
+                            <constraint firstAttribute="trailing" secondItem="cGv-1i-kbn" secondAttribute="trailing" id="UaZ-eg-SUp"/>
+                            <constraint firstItem="cGv-1i-kbn" firstAttribute="leading" secondItem="ofr-eV-kus" secondAttribute="leading" id="azE-EK-1Zu"/>
+                            <constraint firstItem="V1g-N5-23s" firstAttribute="top" secondItem="cGv-1i-kbn" secondAttribute="bottom" constant="120" id="cbl-su-kbW"/>
+                            <constraint firstItem="cGv-1i-kbn" firstAttribute="top" secondItem="fKy-gu-n5s" secondAttribute="bottom" constant="240" id="lWg-xz-kyf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAV-SB-TCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="339"/>
+        </scene>
+    </scenes>
+</document>
